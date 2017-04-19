@@ -1,0 +1,11 @@
+SELECT * 
+FROM mtb_authority_note AS s
+INNER JOIN mtb_security_authority AS r ON s.id = r.id
+INNER JOIN dtb_invalid_authority AS h ON r.id = h.security_authority_id
+
+SELECT * FROM mtb_authority_note auth INNER JOIN mtb_security_authority invalid ON auth.id = invalid.id 
+
+
+'183' => '稼働報告管理／加盟店',
+'184' => '削除ボタン',
+'185' => '加盟店登録/加盟店ステータス',

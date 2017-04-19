@@ -1,0 +1,11 @@
+function getCarrier($id)
+{
+    $Carrier_data = array(
+        '0' => 'ソフトバンク',
+        '1' => 'ドコモ',
+        '2' => 'AU',
+        '3' => 'その他'
+    );
+
+    return isset($Carrier_data[$id]) ? $Carrier_data[$id] : null;
+}
